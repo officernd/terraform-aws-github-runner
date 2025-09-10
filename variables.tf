@@ -800,3 +800,15 @@ variable "enable_jit_config" {
   type        = bool
   default     = null
 }
+
+variable "runner_hook_job_started" {
+  type        = string
+  default     = ""
+  description = "Script to be ran in the runner environment at the beginning of every job"
+}
+
+variable "runner_hook_job_completed" {
+  type        = string
+  default     = ""
+  description = "Script to be ran in the runner environment at the end of every job"
+}
